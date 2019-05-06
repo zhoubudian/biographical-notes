@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jl</title>
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" href="css/index.css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/aos.css">
+	<!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	<!-- 引入组件库 -->
+	
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.movebg.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="js/aos.js"></script>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+	<script type="text/javascript" src="js/mymouse.js" id="mymouse"></script>
+
+	<div id="banner" class="container demo-1">
+		<div class="content">
+			<div id="large-header" class="large-header">
+				<canvas id="demo-canvas"></canvas>
+				<h1 class="main-title">周兵颖<span class="thin">一个前端工程师</span></h1>
+				<!-- <div class="mask"></div> -->
+			</div>
+		</div>
+	</div>
+
+	<div id="header">
+		<div class="logo">
+			<div class="round"></div>
+		</div>
+		<nav>
+			<!-- <div class="wraper"> -->
+			<div class="nav">
+				<ul class="nav-all">
+					<li class="nav-item cur"><a href="#about">关于我</a></li>
+					<li class="nav-item"><a href="#skill">前端技能</a></li>
+					<li class="nav-item"><a href="#works">作品集</a></li>
+					<li class="nav-item"><a href="#job">工作经历</a></li>
+					<li class="nav-item"><a href="#contact">联系我</a></li>
+				</ul>
+				<!--移动的滑动-->
+				<div class="move-bg"></div>
+				<!--移动的滑动 end-->
+			</div>
+			<!-- </div> -->
+			<script>
+				$(function () {
+					$(".nav").movebg({
+						width: 120 /*滑块的大小*/ ,
+						extra: 40 /*额外反弹的距离*/ ,
+						speed: 300 /*滑块移动的速度*/ ,
+						rebound_speed: 400 /*滑块反弹的速度*/
+					});
+				})
+			</script>
+		</nav>
+	</div>
+
+	<div id="about">
+		<div class="about-me" aos="fade-down"
+		aos-easing="linear"
+		aos-duration="1500">
+			<ul>
+				<li class="cha">关于我</li>
+				<li class="line"></li>
+				<li class="eng">- ABOUT ME -</li>
+			</ul>
+		</div>
+		<ul aos="fade-right"
+		aos-offset="300"
+		aos-easing="ease-in-sine">
+			<li>
+				<div class="old"></div>
+				<ul class="old-ul">
+					<li class="old-cha">年龄</li>
+					<li class="old-num">22</li>
+				</ul>
+			</li>
+			<li>
+				<div class="xue"></div>
+				<ul class="old-ul">
+					<li class="old-cha">学历</li>
+					<li class="old-num">本科</li>
+				</ul>
+			</li>
+			<li>
+				<div class="loca"></div>
+				<ul class="old-ul">
+					<li class="old-cha">坐标</li>
+					<li class="old-num">杭州</li>
+				</ul>
+			</li>
+			<li>
+				<div class="state"></div>
+				<ul class="old-ul">
+					<li class="old-cha">状态</li>
+					<li class="old-num">在职</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="introduced"  aos="fade-right"
+		aos-offset="200"
+		aos-easing="ease-in-sine">
+			<p class="intro-one">我是一个动手能力强,喜欢新鲜事物,做事认真,有一定的学习能力的人.对于前端开发怀有热情和好奇心,不断的学习前端技术.
+			</p>
+			<p class="intro-one">熟练掌握HTML和CSS制作符合W3C标准的页面.熟悉HTML5网页的语义化,能熟练的使用CSS3实现各种网页特效.可以熟练的使用Flex布局,熟练掌握JavaScript,对JavaScript函数式编程和JavaScript面向对象编程有一定理解.熟练掌握Vue框架以及Element
+				UI组件库.熟悉ECharts.js可視化工具并有一些开发经验.了解koa2,MongoDB常用的增删改查方法,了解Node.js+MongoDB的搭建.具备独立开发的能力.</p>
+		</div>
+	</div>
+
+	<div id="skill">
+		<div class="skiMask"></div>
+		<div class="webskill" aos="flip-left">
+			<ul>
+				<li class="cha">前端技能</li>
+				<li class="line"></li>
+				<li class="eng">- WEB SKILL -</li>
+			</ul>
+		</div>
+		<div class="boxski" aos="flip-right">
+			<div class="box">
+				<div class="he_3DFlipY">
+					<div class="he_3DFlipY_inner">
+						<div class="he_3DFlipY_img">
+							<img src="./img/HTML.png">
+							<p>HTML</p>
+						</div>
+						<div class="he_3DFlipY_caption">
+							<ul>
+								<li>熟练运用HTML标签</li>
+								<li>理解web标准</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="he_3DFlipY">
+					<div class="he_3DFlipY_inner">
+						<div class="he_3DFlipY_img">
+							<img src="./img/css.png">
+							<p>CSS</p>
+						</div>
+						<div class="he_3DFlipY_caption">
+							<ul>
+								<li>熟练运用CSS3新属性</li>
+								<li>熟悉常见的CSS hack</li>
+								<li>掌握@keyframes制作动画效果</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="he_3DFlipY">
+					<div class="he_3DFlipY_inner">
+						<div class="he_3DFlipY_img">
+							<img src="./img/js.png">
+							<p>JavaScript</p>
+						</div>
+						<div class="he_3DFlipY_caption">
+							<ul>
+								<li>掌握JavaScript的基础知识</li>
+								<li>能够编写基本的原生JavaScript组件</li>
+								<li>熟练与后台进行交互</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="he_3DFlipY">
+					<div class="he_3DFlipY_inner">
+						<div class="he_3DFlipY_img">
+							<img src="./img/vue.png">
+							<p>Vue</p>
+						</div>
+						<div class="he_3DFlipY_caption">
+							<ul>
+								<li>熟练运用vue全家桶,vue2.0</li>
+								<li>熟练使用axios,vuex</li>
+								<li>熟悉ELement UI组件库</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box">
+				<div class="he_3DFlipY">
+					<div class="he_3DFlipY_inner">
+						<div class="he_3DFlipY_img">
+							<img src="./img/node.png">
+							<p>Node.js+MongoDB</p>
+						</div>
+						<div class="he_3DFlipY_caption">
+							<ul>
+								<li>掌握Express+MongoDB开发项目</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="works">
+		<div class="works-me" aos="zoom-in">
+			<ul>
+				<li class="cha">作品集</li>
+				<li class="line"></li>
+				<li class="eng">- SOME DEMO -</li>
+			</ul>
+		</div>
+		<div class="workShow" aos="fade-down"
+		aos-easing="linear"
+		aos-duration="1000">
+			<div class="workChange" style="opacity: 1;">
+				<div class="workPic">
+					<img src="img/11.jpg" />
+					<img src="img/22.png" />
+				</div>
+				<div class="workDir">
+					<h2 class="workH2">拜访签到(基于企业微信)</h2>
+					<p class="workOne">技术实现: <span>vue-cli,axios,vuex,Iview,vue-amap,JavaScript</span></p>
+					<p class="workTwo">实现技术:</p>
+					<div class="workThree">
+						<li>● 利用axios向后台获取和发送数据,利用vuex进行页面之间的传值</li>
+						<li>● 页面只要用用Iview组件库</li>
+						<li>● 利用vue-amap对用户进行进准的定位,利用H5相关技术调用相机和对图片进行压缩</li>
+					</div>
+				</div>
+			</div>
+			<div class="workChange">
+				<div class="workPicc">
+					<img src="img/e.png" />
+					<img src="img/e1.jpg" />
+					<img src="img/e2.jpg" />
+				</div>
+				<div class="workDir">
+					<h2 class="workH2">统一电话查询系统(基于企业微信)</h2>
+					<p class="workOne">技术实现: <span>vue-cli,axios,ECharts,Element UI,vue-aplayer </span></p>
+					<p class="workTwo">实现技术:</p>
+					<div class="workThree">
+						<li>● 采用Element UI相应组件布局</li>
+						<li>● 利用axios向后台获取和发送数据</li>
+						<li>● 利用ECharts把数据以柱状图的形式展示出来</li>
+						<li>● 利用vue-aplayer实现录音的播放</li>
+					</div>
+				</div>
+			</div>
+			<div class="workChange">
+				<div class="workPics">
+					<img src="images/1.jpg" />
+					<img src="images/2.jpg" />
+					<img src="images/4.jpg" />
+					<img src="images/5.jpg" />
+				</div>
+				<div class="workDir">
+					<h2 class="workH2">商城网站(个人项目)</h2>
+					<p class="workOne">技术实现: <span>HTML, CSS, JavaScript, Vue</span></p>
+					<p class="workTwo">实现技术:</p>
+					<div class="workThree">
+						<li>● 利用div+css实现页面布局,高度还原</li>
+						<li>● 利用原生JavaScript实现页面的动态交互</li>
+						<li>● 在购物车页面,利用Vue实现购物车中的商品结算和删除功能</li>
+					</div>
+					<p class="workFour">
+						GitHub: <a href="https://zhoubudian.github.io/hello-web/%E4%BB%BF%E7%BD%91%E6%98%93%E4%B8%A5%E9%80%89/index.html">点击这里</a>
+					</p>
+				</div>
+			</div>
+			<div class="workChange">
+				<div class="workPics">
+					<img src="img/a1.png" />
+					<img src="img/a2.png" />
+					<img src="img/a3.png" />
+					<img src="img/a4.png" />
+				</div>
+				<div class="workDir">
+					<h2 class="workH2">express+MongoDB+vue购物网站(个人项目)</h2>
+					<p class="workOne">技术实现: <span>HTML, CSS, JavaScript,express,MongoDB,Element UI</span></p>
+					<p class="workTwo">实现技术:</p>
+					<div class="workThree">
+						<li>● 采用Element UI相应组件布局</li>
+						<li>● 利用express实现注册、登录、添加购物车功能</li>
+						<li>● 利用MongoDB数据库存储数据</li>
+					</div>
+					<p class="workFour">
+						GitHub: <a href="https://github.com/zhoubudian/node-MongoDB-vue">点击这里</a>
+					</p>
+				</div>
+			</div>
+			<div class="workChange">
+				<div class="workPics">
+					<img src="img/webapp1.jpg" />
+					<img src="img/webapp2.jpg" />
+					<img src="img/webapp3.jpg" />
+					<img src="img/webapp4.jpg" />
+				</div>
+				<div class="workDir">
+					<h2 class="workH2">线上课堂(webapp)(个人项目)</h2>
+					<p class="workOne">技术实现: <span>HTML, CSS, JavaScript, Vue全家桶</span></p>
+					<p class="workTwo">实现技术:</p>
+					<div class="workThree">
+						<li>● 使用vue-cli框架组件式开发的思维和流程</li>
+						<li>● 通过vue-router实现路由,使用钩子函数实现底部加载</li>
+						<li>● 通过axios实现与后端通信,实现单页面应用</li>
+					</div>
+					<p class="workFour">
+						GitHub: <a href="https://zhoubudian.github.io/web/vued">点击这里</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<ul class="point">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<div class="division">
+			更多作品,待更新......
+		</div>
+	</div>
+
+	<div id="job">
+		<div class="jobMask"></div>
+		<div class="works-me" aos="fade-right"
+		aos-offset="300"
+		aos-easing="ease-in-sine">
+			<ul>
+				<li class="cha">工作经历</li>
+				<li class="line"></li>
+				<li class="eng">- SOME DEMO -</li>
+			</ul>
+		</div>
+		<div id="timeLine" aos="fade-zoom-in"
+		aos-easing="ease-in-back"
+		aos-delay="300"
+		aos-offset="0">
+			<el-timeline>
+				<el-timeline-item timestamp="2019/5/6" placement="top">
+				<el-card>
+					<h4>浙江省米奥兰特商务会展股份有限公司</h4>
+					<p>2018/12 - 至今</p>
+					<p>web前端开发实习生</p>
+				</el-card>
+				</el-timeline-item>
+				<el-timeline-item timestamp="2019" placement="top">
+				<el-card>
+					<h4>毕业于大庆师范学院</h4>
+				</el-card>
+				</el-timeline-item>
+			</el-timeline>
+		</div>
+	</div>
+
+	<div id="contact">
+		<div class="con-center"  aos="fade-up"
+		aos-anchor-placement="center-bottom">
+			<ul class="con-ul">
+				<li>联系我</li>
+				<li aos="flip-left">
+					<img src="./img/cont.jpg" alt="">
+				</li>
+				<li>zby_201810@163.com</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="htop">
+
+	</div>
+
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script>
+		new Vue({
+			el: '#timeLine',
+			data: function() {
+				return { visible: false }
+			}
+		})
+	</script>
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/EasePack.min.js"></script>
+	<script src="js/rAF.js"></script>
+	<script src="js/demo-1.js"></script>
+	<script src="js/vanilla-tilt.js">
+		/*只能放在body页面底部*/
+	</script>
+
+	<script src="./js/index.js"></script>
+	<script>
+			AOS.init({
+				ease: 'ease-out-back',
+				duration: 1000
+			});
+			/* 必须放在底部 */
+	</script>
+</body>
+
+</html>
